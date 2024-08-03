@@ -23,7 +23,7 @@ public class UsuarioService {
             usuario.setSenha(passwordEncoder.encode(usuario.getSenha()));
             return usuarioRepository.save(usuario);
         } catch (ConflictException e) {
-            throw new ConflictException("Email já cadastrado ", e.getCause());
+            throw new ConflictException("Email já cadastrado", e.getCause());
         }
     }
 
@@ -31,10 +31,10 @@ public class UsuarioService {
         try {
             boolean existe = verificaEmailExistente(email);
             if (existe) {
-                throw new ConflictException("Email já cadastrado " + email);
+                throw new ConflictException("Email já cadastrado" + email);
             }
         } catch (ConflictException e) {
-            throw new ConflictException("Email já cadastrado ", e.getCause());
+            throw new ConflictException("Email já cadastrado", e.getCause());
         }
     }
 
