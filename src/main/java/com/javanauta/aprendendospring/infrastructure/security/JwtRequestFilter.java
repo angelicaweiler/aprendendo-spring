@@ -23,6 +23,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     public JwtRequestFilter(JwtUtil jwtUtil, UserDetailsService userDetailsService) {
         this.jwtUtil = jwtUtil;
         this.userDetailsService = userDetailsService;
+
     }
 
     // Método chamado uma vez por requisição para processar o filtro
