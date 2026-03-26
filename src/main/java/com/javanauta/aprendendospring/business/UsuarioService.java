@@ -15,6 +15,7 @@ public class UsuarioService {
     private final UsuarioRepository usuarioRepository;
     private final PasswordEncoder passwordEncoder;
 
+
     public Usuario salvarUsuario(Usuario usuario) {
         try {
             emailExiste(usuario.getEmail());
