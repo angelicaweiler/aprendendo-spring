@@ -23,6 +23,7 @@ public class UsuarioController {
 
     @PostMapping
     public ResponseEntity<Usuario> salvaUsuario(@RequestBody Usuario usuario){
+        //aqui um comentario pra gerar um conflito
         return ResponseEntity.ok(usuarioService.salvarUsuario(usuario));
     }
 
