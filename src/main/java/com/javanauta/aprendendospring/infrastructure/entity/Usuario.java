@@ -17,6 +17,7 @@ import java.util.List;
 public class Usuario implements UserDetails {
 
     //mostrando que aqui pode dar um conflito
+    //Alterando main para simular conflito
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
