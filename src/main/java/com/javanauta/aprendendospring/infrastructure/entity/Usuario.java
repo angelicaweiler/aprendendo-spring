@@ -16,6 +16,7 @@ import java.util.List;
 @Table(name = "usuario")
 public class Usuario implements UserDetails {
 
+    //mostrando que aqui pode dar um conflito
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
