@@ -26,6 +26,9 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioService.salvarUsuario(usuario));
     }
 
+
+
+    //mostrando que aqui pode dar um conflito
     @PostMapping("/login")
     public String login(@RequestBody UsuarioDTO usuarioDTO){
         Authentication authentication = authenticationManager.authenticate(
